@@ -58,13 +58,13 @@
     "precision_seuil": 0.4989,
     "rappel_seuil": 0.7337,
     "gain_net_test_euros": 64519.0,
-    "temps_entrainement_s": 11.1
+    "temps_entrainement_s": 17.2
   },
   "versions": {
-    "python": "3.13.16",
+    "python": "3.11.9",
     "scikit-learn": "1.6.1",
     "pandas": "2.2.3",
-    "numpy": "2.2.6",
+    "numpy": "2.4.6",
     "joblib": "1.4.2"
   }
 }

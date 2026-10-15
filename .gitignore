@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environments (any name, e.g. .venv_check3)
+.venv*/
+venv*/
