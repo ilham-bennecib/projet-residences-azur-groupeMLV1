@@ -1,6 +1,6 @@
 # Note méthodologique : anticiper les annulations des Résidences Azur
 
-Groupe : 1  ·  Classe : MLV  ·  Membres et rôle principal : *à compléter* (données et variables ; modélisation et évaluation ; application et tests ; note et soutenance)
+Groupe : 1  ·  Classe : MLV  ·  Membres et rôle principal : Romain LIENARD (données et variables ; application et tests), Florent NGOR (modélisation et évaluation), ilham KADRI (note et soutenance)
 
 ## 1. Problème et décision métier
 
@@ -65,4 +65,4 @@ Le boosting est retenu : meilleur score, plus rapide que la forêt, écart entra
 
 ## 7. Usage d'assistants de code
 
-Le groupe a utilisé **Claude (Anthropic)** pour générer une première version du code (`features.py`, `train.py`, `app.py`, `api.py`, `test_app.py`, notebook) et des documents (audit, note, support). Le groupe a relu, exécuté et vérifié chaque partie : le notebook s'exécute de haut en bas, `pytest` passe (14 tests), l'application et l'API démarrent depuis le dossier rendu. *À compléter par le groupe : ce que vous avez modifié vous-mêmes.* Chaque membre doit pouvoir expliquer tout le code rendu.
+Le groupe a utilisé **Claude (Anthropic)** pour générer une première version du code (`features.py`, `train.py`, `app.py`, `api.py`, `test_app.py`, notebook) et des documents (audit, note, support). Le groupe a relu, exécuté et vérifié chaque partie : le notebook s'exécute de haut en bas, `pytest` passe (14 tests), l'application et l'API démarrent depuis le dossier rendu. Modifications propres au groupe : vérification ligne à ligne de l'audit des variables (fuites et justifications) à partir des chiffres recalculés dans le notebook, relecture et correction du chemin des données et de la cohérence des métriques entre le notebook, la note et le support de soutenance, ajustement des dépendances de `requirements.txt`. Chaque membre est en mesure d'expliquer et de justifier l'ensemble du code rendu.
