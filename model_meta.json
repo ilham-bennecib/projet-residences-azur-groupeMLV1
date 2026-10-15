@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-15",
+  "modele": "HistGradientBoostingClassifier (max_iter=400, learning_rate=0.08)",
+  "seuil_par_defaut": 0.18,
+  "variables_brutes": [
+    "site",
+    "date_reservation",
+    "date_arrivee",
+    "nuits_week_end",
+    "nuits_semaine",
+    "nb_adultes",
+    "nb_enfants",
+    "nb_bebes",
+    "formule",
+    "pays_client",
+    "origine_commerciale",
+    "canal_vente",
+    "client_fidele",
+    "annulations_passees",
+    "sejours_honores_passes",
+    "logement_demande",
+    "garantie",
+    "id_agence",
+    "id_entreprise",
+    "profil_client",
+    "tarif_nuit",
+    "nb_demandes_speciales"
+  ],
+  "champs_saisis": [
+    "date_reservation",
+    "date_arrivee",
+    "nuits_week_end",
+    "nuits_semaine",
+    "nb_adultes",
+    "pays_client",
+    "origine_commerciale",
+    "garantie",
+    "nb_demandes_speciales",
+    "id_agence"
+  ],
+  "variables_exclues": {
+    "id_reservation": "identifiant, aucune information",
+    "statut_dossier": "fuite : statut final connu après le séjour",
+    "date_statut": "fuite : date du statut final",
+    "logement_attribue": "fuite : attribué à l'arrivée",
+    "nb_modifications": "inconnu à l'enregistrement (modifications ultérieures)",
+    "jours_attente_confirmation": "s'accumule après l'enregistrement",
+    "nb_places_parking": "fuite : demandé à l'arrivée (0 % d'annulation si > 0)",
+    "code_promo": "aucun lien avec la cible (32 à 35 % d'annulation pour chaque code)",
+    "indice_affinite": "aucun lien avec la cible (corrélation -0,007), origine inconnue"
+  },
+  "protocole": "dédoublonnage, découpage chronologique 80/20 sur date_reservation",
+  "nb_reservations": 83984,
+  "metriques": {
+    "auprc_test": 0.5996,
+    "auc_test": 0.8361,
+    "precision_seuil": 0.4989,
+    "rappel_seuil": 0.7337,
+    "gain_net_test_euros": 64519.0,
+    "temps_entrainement_s": 11.1
+  },
+  "versions": {
+    "python": "3.13.16",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.2.6",
+    "joblib": "1.4.2"
+  }
+}
