@@ -3,7 +3,7 @@ scikit-learn==1.6.1
 pandas==2.2.3
 numpy==2.2.6
 joblib==1.4.2
-matplotlib==3.8.4
+matplotlib==3.9.4
 gradio==6.27.0
 fastapi==0.136.3
 uvicorn==0.34.2
